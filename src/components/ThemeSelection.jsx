@@ -24,7 +24,7 @@ const ThemeSelection = ({ onThemeChange, onColorChange }) => {
         <div className="theme-selection">
             {/* Theme Button */}
             <button className="theme-btn" onClick={toggleThemeUI}>
-                Theme
+                THEME
             </button>
 
             {/* Theme UI */}

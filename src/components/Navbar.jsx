@@ -8,11 +8,11 @@ const Navbar = ({ darkMode, backgroundColor, onThemeChange, onColorChange }) => 
         <nav className={`navbar ${darkMode ? "dark" : "light"}` } style={{ backgroundColor }}>
 
             <div className="navbar-left">
-                <h1 className="navbar-title">Placeholder</h1>
-                <NavLink to="/" className="nav-link" activeClassName="active">Home</NavLink>
-                <NavLink to="/characters" className="nav-link" activeClassName="active">Characters</NavLink>
-                <NavLink to="/theworld" className="nav-link" activeClassName="active">The World</NavLink>
-                <NavLink to="/sessions" className="nav-link" activeClassName="active">Sessions</NavLink>
+                <h1 className="navbar-title">PLACEHOLDER</h1>
+                <NavLink to="/" className="nav-link" activeClassName="active">HOME</NavLink>
+                <NavLink to="/characters" className="nav-link" activeClassName="active">CHARACTERS</NavLink>
+                <NavLink to="/theworld" className="nav-link" activeClassName="active">THE WORLD</NavLink>
+                <NavLink to="/sessions" className="nav-link" activeClassName="active">SESSIONS</NavLink>
             </div>
 
             <div className="navbar-right">

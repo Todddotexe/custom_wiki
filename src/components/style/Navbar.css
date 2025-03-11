@@ -25,9 +25,11 @@
 }
 
 .navbar-title {
+  transition: all 0.3s ease-in-out;
+
   font-size: 1.5rem;
-  font-weight: bold;
   margin: 10px;
+  padding-right: 20px;
   color: white;
 }
 
@@ -35,18 +37,44 @@
   transition: all 0.3s ease-in-out;
 
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
   color: black;
 
   padding-bottom: 10px;
   padding-top: 10px;
 
-  width: 120px;
+  max-width: 100px;
+  min-width: 100px;
+
+  /* Lean Left Sharp */
+  /* border-top-right-radius: 10px;
+  clip-path: polygon(0% 100%, 10% 0%, 100% 0%, 100% 100%);
+  padding-left: 20px; */
+
+  /* Lean Right Sharp */
+  /* border-top-left-radius: 10px; 
+  clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+  padding-right: 20px; */
+
+    /* Lean Left Soft */
+  /* border-top-right-radius: 30px;
+  border-top-left-radius: 100px;
+  padding-left: 20px; */
+
+  /* Lean Right Sharp */
+  border-top-left-radius: 30px; 
+  border-top-right-radius: 100px;
+  padding-right: 20px;
+
+  /* Centered */
+  /* border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  clip-path: polygon(0% 100%, 20% 0%, 100% 0%, 100% 100%);
+  margin-right: 10px; */
+
   opacity: 0.8;
   background-color: rgb(224, 218, 198);
 }
@@ -63,13 +91,13 @@
   transition: all 0.3s ease-in-out;
 
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding: 10px 10px;
   color: white;
 
   border: none;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  /* border-top-right-radius: 20px;
+  border-top-left-radius: 20px; */
   background-color: rgb(38, 48, 57);
 }
 
@@ -79,7 +107,7 @@
   top: 1; /* Adjust to appear just below the Theme button */
   right: 0;  /* Align with the right of the navbar */
   background-color: rgb(38, 48, 57);
-  padding: 10px;
+  padding: 7px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   z-index: 10;
