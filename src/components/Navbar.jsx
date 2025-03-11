@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
 import "./style/Navbar.css";
 import ThemeSelection from "./ThemeSelection";
 
