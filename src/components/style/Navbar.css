@@ -1,0 +1,166 @@
+/* ----- Be warned, travesty below ----- */
+
+/* ----- Navbar Styling ----- */
+/* Basic Styling for Navbar */
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+
+  display: flex;
+  justify-content: space-between; /* Left-aligned & right-aligned sections */
+  align-items: flex-end; /* Align elements to the bottom */
+  padding: 0px 20px;  /* 0px first so styling touches app-container */
+  height: 50px; /* Adjust height as needed */
+  position: relative; /* Make navbar the positioning reference for absolute elements */
+}
+
+/* Left-aligned section */
+.navbar-left {
+  display: flex;
+  align-items: flex-end;
+}
+/* Right-aligned section */
+.navbar-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px;
+  color: white;
+}
+
+.nav-link {
+  transition: all 0.3s ease-in-out;
+
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  width: 120px;
+  border-top-right-radius: 10px;
+  clip-path: polygon(0% 100%, 20% 0%, 100% 0%, 100% 100%);
+  opacity: 0.8;
+  background-color: rgb(224, 218, 198);
+}
+.nav-link:hover {
+  opacity: 1;
+}
+.nav-link.active {
+  opacity: 1;
+}
+
+/* ----- Theme Button Styling ----- */
+/* "Theme" Button */
+.theme-btn {
+  transition: all 0.3s ease-in-out;
+
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 10px;
+  color: white;
+
+  border: none;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: rgb(38, 48, 57);
+}
+
+/* Floating Theme UI */
+.theme-ui {
+  position: absolute;
+  top: 1; /* Adjust to appear just below the Theme button */
+  right: 0;  /* Align with the right of the navbar */
+  background-color: rgb(38, 48, 57);
+  padding: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: 10;
+  width: 90px; /* Adjust width slightly for centering */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures centering of children */
+
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dark Mode Toggle Button */
+.darkmode-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(224, 218, 198);
+  color: black;
+  transition: background-color 0.3s ease;
+}
+.darkmode-btn:hover {
+  background-color: #666;
+}
+
+/* Dark Mode Toggle inside the floating UI */
+.darkmode-option {
+  display: flex;
+  justify-content: center; /* Center the dark mode toggle */
+  width: 100%; /* Ensures proper centering */
+  margin-bottom: 10px;
+}
+
+/* Color Grid Styling */
+.color-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  gap: 5px;
+  justify-content: center; /* Center the grid */
+  align-items: center;
+  width: fit-content; /* Keeps the grid compact */
+  margin: 0 auto; /* Ensures centering */
+}
+
+/* Color Buttons */
+.color-btn {
+  width: 25px; /* Adjust for better visibility */
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.color-btn:hover {
+  opacity: 0.7;
+}
+
+/* ----- Dark Mode Styling ----- */
+/* Navigation */
+.navbar.dark .nav-link{
+  background-color: rgb(38, 48, 57);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Theme Button */
+.navbar.dark .theme-btn{
+  background-color: rgb(224, 218, 198);
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Floating Theme UI */
+.navbar.dark .theme-ui{
+  background-color: rgb(224, 218, 198);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dark Mode Toggle Button */
+.navbar.dark .darkmode-btn{
+  background-color: rgb(38, 48, 57);
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
